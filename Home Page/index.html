@@ -14,13 +14,13 @@
   <div class="wrapper w-full relative">
     <!--header-->
     <div class="header w-max-[1440px] h-[683px]">
-      <div
-        class="header-center w-[1440px] h-full bg-[url('/src/images/header-img-1.png')] bg-no-repeat mx-auto relative">
+      <div class="header-center w-[1440px] h-full mx-auto relative">
+        <img class="w-full h-full absolute top-0" src="/src/images/header-img-1.png" alt="">
+        <img class="w-full h-[479px] absolute top-[132px]" src="/src/images/header-img-2.png" alt="">
         <div
-          class="header-nav flex justify-between max-w-[1224px] h-[96px] px-[18.5px] bg-white rounded-b-[16px] mx-auto">
+          class="header-nav flex justify-between w-[1224px] h-[96px] px-[18.5px] bg-white rounded-b-[16px] left-0 right-0 mx-auto absolute z-100 ">
           <div class="header-nav-r flex items-center gap-x-[5px]">
-            <img class="w-[59.28px] h-[59px]" src="src/images/autorent-pic-logo.png" alt="">
-            <img class="w-[87px] h-[43px]" src="src/images/autorent-text-logo.png" alt="">
+            <img class="w-[151.28px] h-[59px]" src="src/images/Logo-blue.svg" alt="">
           </div>
           <div class="header-nav-c flex items-center gap-x-[40px]">
             <a href="">رزرو خودرو</a>
@@ -120,18 +120,22 @@
     <!--end brands-->
     <!--banner-->
     <div class="banner w-max-[1224px] h-[292px] mt-[47px]">
-      <div class="banner-center w-[1224px] h-full mx-auto relative">
-        <div
-          class="banner-img pt-[24px] w-full h-full rounded-[16px] bg-[url('/src/images/car-banner-1.jpg')] bg-cover">
-          <div class="w-fit h-[32px] mb-[8px] mx-auto font-estedad text-[24px] text-[#FDB713]">چــــــرا اُتو رِنت؟
+      <div class="banner-center w-[1224px] h-full mx-auto relative ">
+        <div class="banner-img pt-[24px] w-full h-full rounded-[16px] object-contain">
+          <img class="absolute inset-0 w-full h-full object-cover rounded-[16px] brightness-[20%]"
+            src="/src/images/car-banner-1.jpg" alt="">
+          <div class="w-fit h-[32px] mb-[8px] absolute left-0 right-0 mx-auto font-estedad text-[24px] text-[#FDB713]">
+            چــــــرا اُتو رِنت؟
           </div>
-          <div class="w-[845px] h-[96px] mx-auto text-center font-estedad text-[18px] text-white">اجاره خودرو از یک شرکت
+          <div
+            class="w-[845px] h-[96px] absolute left-0 right-0 top-[75px] mx-auto leading-[180%] text-center font-estedad text-[18px] text-white">
+            اجاره خودرو از یک شرکت
             اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی
             ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست،
             می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</div>
         </div>
         <div
-          class="banner-item w-[312px] h-[186px] absolute top-[210px] left-[808px] px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
+          class="banner-item w-[312px] h-[186px] absolute z-100 top-[210px] left-[808px] px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
           <div
             class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
             <img class="w-[48px] h-[48px]" src="src/images/box.svg" alt="">
@@ -652,21 +656,21 @@
       class="footer-center w-[1224px] h-full mx-auto rounded-[16px] bg-[#1E1E1EE5] opacity-[90%] px-[24px] py-[56px]">
       <div
         class="footer-top w-[1120px] h-[101px] mx-auto flex items-center justify-evenly p-[16px] border-[1px] border-[#868686] rounded-[16px]">
-        <div class="footer-top-items flex gap-x-[16px] items-center w-[113px] h-[69px] text-center">
+        <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
           <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/phone.svg">
           <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
             <div class="mb-[12px]">ارتباط با ما</div>
             <div>۰۹۱۲-۲۱۳۲۶۵۴۵</div>
           </div>
         </div>
-        <div class="footer-top-items flex gap-x-[16px] items-center w-[113px] h-[69px] text-center">
+        <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
           <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/mail.svg">
           <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
             <div class="mb-[12px]">ایمیل</div>
             <div>autorent@info.com</div>
           </div>
         </div>
-        <div class="footer-top-items flex gap-x-[16px] items-center w-[113px] h-[69px] text-center">
+        <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
           <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/address.svg">
           <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
             <div class="mb-[12px]">آدرس</div>
@@ -674,8 +678,34 @@
           </div>
         </div>
       </div>
-      <div class="footer-middle"></div>
-      <div class="footer-bottom"></div>
+      <div class="footer-middle flex gap-x-[56px] items-center justify-center mt-[16px]">
+        <div class="footer-middle-right w-[407px] h-[168px]">
+          <img class="w-[151.28px] h-[59px] mb-[24px]" src="src/images/Logo-orange.svg" alt="">
+          <div class="w-full font-estedad text-[14px] text-white text-justify">اتورنت با رویکرد اعتماد به مشتری، با در
+            اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور
+            ایران آماده خدمت‌رسانی به مشتریان است.</div>
+        </div>
+        <div
+          class="footer-middle-center w-[134px] h-[156px] grid grid-flow-row gap-y-[24px] font-estedad text-[14px] text-white text-justify font-medium">
+          <div>دسترسی آسان</div>
+          <div>سوالات متداول</div>
+          <div>تماس با ما</div>
+          <div>درباره ما</div>
+        </div>
+        <div class="footer-middle-left w-[320px] h-[80px]">
+          <div class="font-estedad text-[16px] text-white text-justify font-bold mb-[12px]">خبرنامه</div>
+          <div
+            class="w-[308px] h-[40px] border-[1px] p-[2px] border-[#AEAEAE] rounded-[8px] flex items-center justify-between">
+            <input class="mr-[3px] w-[225px] h-[30px] text-[12px] font-estedad text-[#C2C2C2]" type="email"
+              placeholder="ایمیل خود را وارد کنید">
+            <div class="w-[66px] h-[32px] rounded-[6px] flex items-center justify-center bg-[#FDB713] text-black"><a
+                href="">ارسال</a></div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-[1176px] text-[#868686] mt-[16px] mb-[24px]">
+      <div class="footer-bottom w-[315px] mx-auto text-[#9A9A9A] font-estedad text-[14px]">تمامی حقوق این وبسایت متعلق
+        به اتورنت می‌باشد</div>
     </div>
   </div>
   <!--end footer-->
