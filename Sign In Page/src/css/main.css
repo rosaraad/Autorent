@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Estedad;
+    src: url(../fonts/Estedad.ttf);
+}
+
+@theme {
+    --font-estedad: Estedad;
+}
