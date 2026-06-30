@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="rtl">
+<html dir="rtl" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="src/css/output.css">
 </head>
 
-<body class="bg-[#F3F3F3] w-screen h-screen">
+<body class="@apply bg-[#F3F3F3] w-screen h-screen">
   <!--wrapper-->
   <div class="wrapper w-full relative">
     <!--header-->
@@ -17,18 +17,32 @@
       <div class="header-center w-[1440px] h-full mx-auto relative">
         <img class="w-full h-full absolute top-0" src="src/images/BANNER1.png" alt="">
         <img class="w-full h-[479px] absolute top-[132px]" src="src/images/BANNER2.png" alt="">
+
         <div
-          class="header-nav flex justify-between w-[1224px] h-[96px] px-[18.5px] bg-white rounded-b-[16px] left-0 right-0 mx-auto absolute z-1000 fixed shadow-2xl shadow-gray-800 ">
+          class="header-nav flex justify-between w-[1224px] h-[96px] px-[18.5px] bg-white rounded-b-[16px] left-0 right-0 mx-auto absolute z-1000 fixed shadow-2xl shadow-gray-800 font-estedad">
           <div class="header-nav-r flex items-center gap-x-[5px]">
             <a href="index.html"><img class="w-[151.28px] h-[59px]" src="src/images/Logo-blue.svg" alt=""></a>
           </div>
-          <div class="header-nav-c flex items-center gap-x-[40px]">
-            <a href="">رزرو خودرو</a>
-            <a href="">خدمات ما</a>
-            <a href="">بلاگ</a>
-            <a href="">درباره ما</a>
-            <a href="">تماس با ما</a>
-            <a href=""><img class="w-[18.8px] h-[19.1px] block" src="src/images/search.png" alt=""></a>
+          <div class="header-nav-c flex items-center gap-x-[40px] text-[16px] text-[#353535]">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary>رزرو خودرو</summary>
+                  <ul class="p-2 bg-base-100 w-40 z-1">
+                    <li><a href="">کوپه</a></li>
+                    <li><a href="">سدان</a></li>
+                    <li><a href="">کروک</a></li>
+                    <li><a href="">شاسی بلند</a></li>
+                    <li><a href="">اسپرت</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="">خدمات ما</a></li>
+              <li><a href="">بلاگ</a></li>
+              <li><a href="">درباره ما</a></li>
+              <li><a href="">تماس با ما</a></li>
+              <li><a href=""><img class="w-[18.8px] h-[19.1px] block" src="src/images/search.png" alt=""></a></li>
+            </ul>
           </div>
           <div class="header-nav-l flex items-center"><a
               class="h-[40px] bg-[#194BF0] text-white rounded-[8px] px-[16px] py-[4px] leading-[30px]"
@@ -547,50 +561,51 @@
           <div class="text-[32px] text-[#353535] text-center font-estedad font-bold">سؤالات<span class="text-[#D79C10]">
               متداول</span></div>
         </div>
-        <div class="question-container flex gap-x-[24px]">
-          <div class="question-container-right">
-            <div class="questions-items">
-              <a href="">
-                <div
-                  class="question-item w-[808px] h-[76px] px-[16px] mb-[16px] rounded-[16px] border-[1px] border-[#D7D7D7] flex gap-x-[8px] justify-start items-center text-[16px] font-estedad font-medium text-[#353535] bg-white">
-                  <img class="w-[24px] h-[24px]" src="src/images/add-square.svg" alt="">در صورت بروز نقص فنی برای خودرو
-                  چه
-                  اتفاقی می افتد؟
+
+        <div class="w-full h-full question-container flex gap-x-[24px]">
+          <div class="w-[808px] h-full question-container-right">
+            <div class="questions-items w-full h-fit space-y-[20px]">
+              <div
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                dir="ltr">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-[16px] text-[#353535]">در صورت بروز نقص فنی برای خودرو چه اتفاقی می
+                  افتد؟</div>
+                <div class="collapse-content text-[14px] text-[#727272] leading-[180%]" dir="rtl">در صورت بروز نقص فنی
+                  که ناشی از استفاده نادرست مشتری نباشد، کافی است موضوع را در اسرع وقت به پشتیبانی مجموعه اطلاع دهید. پس
+                  از بررسی، اقدامات لازم برای رفع مشکل یا جایگزینی خودرو انجام خواهد شد.</div>
+              </div>
+              <div
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                dir="ltr">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[16px] text-[#353535]">هزینه بنزین و کارواش در خودروهای اجاره ای به عهده
+                  کیست؟</div>
+                <div class="collapse-content text-[14px] text-[#727272] leading-[180%]" dir="rtl"> در زمان اجاره خودرو
+                  بدون راننده خودروها کارواش شده و با باک بنزین
+                  پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در صورتی که خودرو به کارواش نیاز داشته و یا خودرو
+                  دارای کسر سوخت باشد هزینه آن بر عهده مشتری می باشد.</div>
+              </div>
+              <div
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                dir="ltr">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[16px] text-[#353535]">آیا ماشین های اتورنت دارای بیمه هستند؟</div>
+                <div class="collapse-content text-[14px] text-[#727272] leading-[180%]" dir="rtl">
+                  بله، تمامی خودروهای اتورنت دارای بیمه معتبر هستند و با پوشش بیمه‌ای به مشتریان عزیز تحویل داده
+                  می‌شوند. جزئیات پوشش بیمه و میزان تعهدات در زمان عقد قرارداد به اطلاع مشتری خواهد رسید.
                 </div>
-              </a>
-              <a href="">
-                <div
-                  class="question-item w-[808px] h-[183px] p-[16px] mb-[16px] rounded-[16px] border-[1px] border-[#D7D7D7] font-estedad bg-white">
-                  <div
-                    class="question-item-title w-fit h-[28px] mb-[16px] text-[16px] font-medium text-[#353535] flex gap-x-[8px] justify-start items-center">
-                    <img class="w-[24px] h-[24px]" src="src/images/minus-square.svg" alt="">هزینه بنزین و کارواش در
-                    خودروهای
-                    اجاره ای به عهده کیست؟
-                  </div>
-                  <div class="question-item-answer text-[14px] text-[#727272] leading-[180%]">
-                    در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک بنزین پر تحویل مشتریان عزیز می گردد. در
-                    زمان
-                    استرداد خودرو در صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده
-                    مشتری
-                    می باشد.
-                  </div>
+              </div>
+              <div
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                dir="ltr">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[16px] text-[#353535]">محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
                 </div>
-              </a>
-              <a href="">
-                <div
-                  class="question-item w-[808px] h-[76px] px-[16px] mb-[16px] rounded-[16px] border-[1px] border-[#D7D7D7] flex gap-x-[8px] justify-start items-center text-[16px] font-estedad font-medium text-[#353535] bg-white">
-                  <img class="w-[24px] h-[24px]" src="src/images/add-square.svg" alt="">آیا ماشین های اتورنت دارای بیمه
-                  هستند؟
-                </div>
-              </a>
-              <a href="">
-                <div
-                  class="question-item w-[808px] h-[76px] px-[16px] rounded-[16px] border-[1px] border-[#D7D7D7] flex gap-x-[8px] justify-start items-center text-[16px] font-estedad font-medium text-[#353535] bg-white">
-                  <img class="w-[24px] h-[24px]" src="src/images/add-square.svg" alt="">محدودیت کیلومتر در اجاره خودرو
-                  چقدر می
-                  باشد؟
-                </div>
-              </a>
+                <div class="collapse-content text-[14px] text-[#727272] leading-[180%]" dir="rtl">میزان محدودیت کیلومتر
+                  بسته به نوع خودرو و مدت زمان اجاره متفاوت است. جزئیات مربوط به سقف مجاز پیمایش در زمان رزرو و در
+                  قرارداد اجاره به اطلاع مشتریان عزیز خواهد رسید.</div>
+              </div>
             </div>
           </div>
           <div class="question-container-left w-[392px] h-[459px] rounded-[16px] overflow-clip">
