@@ -1301,9 +1301,6 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
-  .w-52 {
-    width: calc(var(--spacing) * 52);
-  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -1704,23 +1701,8 @@
   .pt-\[24px\] {
     padding-top: 24px;
   }
-  .pl-\[70px\] {
-    padding-left: 70px;
-  }
-  .pl-\[80px\] {
-    padding-left: 80px;
-  }
-  .pl-\[100px\] {
-    padding-left: 100px;
-  }
-  .pl-\[110px\] {
-    padding-left: 110px;
-  }
   .pl-\[130px\] {
     padding-left: 130px;
-  }
-  .pl-\[۸0px\] {
-    padding-left: ۸0px;
   }
   .text-center {
     text-align: center;

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html dir="rtl" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لیست خودروهای اجاره ای</title>
+  <link rel="stylesheet" href="src/css/output.css">
+</head>
+
+<body>
+  <!--wrapper-->
+  <div class="wrapper w-full">
+    <!--header-->
+    <div class="header w-max-[1440px] h-[400px] mb-[56px]">
+      <div class="header-center w-[1440px] h-[400px] mx-auto relative">
+        <img class="w-full h-full absolute inset-0 object-cover brightness-60" src="src/images/page screen.jpg" alt="">
+        <div
+          class="header-nav flex justify-between w-[1224px] h-[96px] px-[18.5px] bg-white rounded-b-[16px] left-0 right-0 mx-auto absolute z-1000 fixed shadow-2xl shadow-gray-800 font-estedad">
+          <div class="header-nav-r flex items-center gap-x-[5px]">
+            <a href="../Home Page/index.html"><img class="w-[151.28px] h-[59px]" src="src/images/Logo-blue.svg"
+                alt=""></a>
+          </div>
+          <div class="header-nav-c flex items-center gap-x-[40px] text-[16px] text-[#353535]">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary>رزرو خودرو</summary>
+                  <ul class="p-2 bg-base-100 w-40 z-1">
+                    <li><a href="">کوپه</a></li>
+                    <li><a href="">سدان</a></li>
+                    <li><a href="">کروک</a></li>
+                    <li><a href="">شاسی بلند</a></li>
+                    <li><a href="">اسپرت</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a href="">خدمات ما</a></li>
+              <li><a href="">بلاگ</a></li>
+              <li><a href="">درباره ما</a></li>
+              <li><a href="">تماس با ما</a></li>
+              <li><a href=""><img class="w-[18.8px] h-[19.1px] block" src="src/images/search.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="header-nav-l flex items-center"><a
+              class="h-[40px] bg-[#194BF0] text-white rounded-[8px] px-[16px] py-[4px] leading-[30px]"
+              href="../Sign In Page/index.html">ورود /
+              ثبت
+              نام</a></div>
+        </div>
+        <div class="header-text w-full h-[579px]">
+          <h1
+            class="header-text-top w-[335px] h-[124px] absolute top-[160px] left-[500px] font-estedad text-[44px] text-[#FDB713]">
+            اجاره خودرو</h1>
+        </div>
+      </div>
+    </div>
+    <!--end header-->
+
+    <!--main-->
+    <div class="main flex justify-center gap-x-[24px]">
+      <div class="main-right w-[288px] h-fit rounded-[14px] py-[24px] bg-white">
+        <details class="price collapse collapse-arrow">
+          <summary class="collapse-title text-[#727272] text-[16px] font-estedad font-normal">
+            قیمت اجاره خودرو
+          </summary>
+          <div class="collapse-content text-sm">
+            <input type="range" min="0" max="6000000" value="30" class="range range-xs" />
+          </div>
+        </details>
+        <details class="brand collapse collapse-arrow">
+          <summary class="collapse-title text-[#727272] text-[16px] font-estedad font-normal">
+            برند خودرو
+          </summary>
+          <div class="collapse-content text-sm flex flex-col gap-y-[10px]">
+            <div class="check-box flex items-center gap-x-[10px]">
+              <input type="checkbox" class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره بنز</label>
+            </div>
+            <div class="check-box flex items-center gap-x-[10px]">
+              <input type="checkbox" class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره بی ام و</label>
+            </div>
+            <div class="check-box flex items-center gap-x-[10px]"><input type="checkbox"
+                class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره پژو</label>
+            </div>
+            <div class="check-box flex items-center gap-x-[10px]"><input type="checkbox"
+                class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره پورشه</label>
+            </div>
+            <div class="check-box flex items-center gap-x-[10px]"><input type="checkbox"
+                class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره کیا</label>
+            </div>
+            <div class="check-box flex items-center gap-x-[10px]"><input type="checkbox"
+                class="w-[16px] h-[16px] rounded-[4px]" />
+              <label for="">اجاره هیوندای</label>
+            </div>
+          </div>
+        </details>
+        <details class="features collapse collapse-arrow">
+          <summary class="collapse-title text-[#727272] text-[16px] font-estedad font-normal">
+            اجاره خودرو براساس نیاز شما
+          </summary>
+          <div class="collapse-content text-sm flex flex-col gap-y-[10px]">
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" checked />
+              <label>اجاره خودرو با راننده</label>
+            </div>
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" />
+              <label>اجاره خودرو بدون راننده</label>
+            </div>
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" />
+              <label>اجاره خودرو ایرانی</label>
+            </div>
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" />
+              <label>اجاره خودرو لوکس</label>
+            </div>
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" />
+              <label>اجاره خودرو تشریفات</label>
+            </div>
+
+            <div class="radio-btn flex items-center gap-x-[10px]">
+              <input type="radio" name="car-rental" />
+              <label>اجاره ماشین عروس</label>
+            </div>
+
+          </div>
+        </details>
+      </div>
+      <div class="main-left">
+        <div class="main-left-top flex items-center gap-x-[24px] mb-[24px]">
+          <div
+            class="dropdown-1 w-[600px] h-[48px] rounded-[8px] border border-[#9A9A9A] px-[12px] flex items-center font-estedad text-[#868686]">
+            <select class="w-full border-none outline-none bg-transparent">
+              <option disabled selected>تقویم قیمتی</option>
+              <option>تقویم قیمتی ۱</option>
+              <option>تقویم قیمتی ۲</option>
+              <option>تقویم قیمتی ۳</option>
+            </select>
+          </div>
+          <div
+            class="dropdown-2 w-[287px] h-[48px] rounded-[8px] border border-[#9A9A9A] px-[12px] flex items-center font-estedad text-[#868686]">
+            <select class="w-full border-none outline-none bg-transparent">
+              <option disabled selected>مرتب سازی</option>
+              <option>براساس قیمت</option>
+              <option>براساس محبوب ترین</option>
+              <option>براساس جدیدترین</option>
+              <option>براساس رنگ</option>
+              <option>براساس مدل</option>
+            </select>
+          </div>
+        </div>
+        <div class="main-left-items w-[912px] mx-auto flex flex-wrap gap-[24px]">
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-500.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره بنز s500</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-sl.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره بنز sl کروک</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-e350.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره بنز E350 سدان</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-e250.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره خودرو بنز E250</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-e350-2013.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره بنز E350 کروک 2013</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+          <div
+            class="item w-[288px] h-[510px] rounded-[16px] p-[16px] bg-white border-[1px] border-[#D7D7D7] transition duration-300 hover:brightness-90">
+            <img class="w-[256px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
+              src="src/images/benz-cls.png" alt="">
+            <div class="mojoodi-item-model mt-[8px]">
+              <h6 class="text-[16px] text-black font-estedad font-bold">اجاره بنز cls</h6>
+              <div class="text-[12px] text-[#494949] font-estedad mt-[8px]">مدل: ۲۰۱۶</div>
+            </div>
+            <div
+              class=" mojoodi-item-roozane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">روزانه</div>
+            </div>
+            <div
+              class="mojoodi-item-mahane w-[256] h-[44px] bg-[#F3F3F3] rounded-[8px] p-[8px] flex items-center relative mt-[8px]">
+              <div class="info-right text-[12px] text-[#212121] font-estedad flex gap-x-[8px] items-center">از ۱ تا ۳۰
+                روز:<span class="text-[16px] text-[#194BF0] font-semibold">۸،۵۰۰،۰۰۰</span></div>
+              <div class="info-left text-[12px] text-[#494949] font-estedad absolute left-[8px]">ماهانه</div>
+            </div>
+            <hr class="mt-[8px] text-[#D7D7D7]">
+            <div
+              class="mojoodi-item-zemanat w-[256] h-[21px] text-[12px] font-estedad text-[#212121] flex items-center justify-between mt-[8px]">
+              <div>مبلغ ضمانت:</div>
+              <div class="text-[12px] font-bold font-estedad">۸۰ میلیون تومان</div>
+            </div>
+            <a href="">
+              <div
+                class="mojoodi-item-reserve w-[256] h-[40px] rounded-[8px] px-[16px] py-[4px] flex justify-center items-center bg-[#194BF0] text-white text-[14px] font-estedad mt-[8px]">
+                درخواست رزرو</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end main-->
+
+    <!--footer-->
+    <div class="my-footer w-max-[1440px] h-[432px] mt-[80px] mb-[64px]">
+      <div
+        class="my-footer-center w-[1224px] h-full mx-auto rounded-[16px] bg-[#1E1E1EE5] opacity-[90%] px-[24px] py-[56px]">
+        <div
+          class="footer-top w-[1120px] h-[101px] mx-auto flex items-center justify-evenly p-[16px] border-[1px] border-[#868686] rounded-[16px]">
+          <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
+            <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/phone.svg">
+            <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
+              <div class="mb-[12px]">ارتباط با ما</div>
+              <div>۰۹۱۲-۲۱۳۲۶۵۴۵</div>
+            </div>
+          </div>
+          <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
+            <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/mail.svg">
+            <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
+              <div class="mb-[12px]">ایمیل</div>
+              <div>autorent@info.com</div>
+            </div>
+          </div>
+          <div class="footer-top-items flex gap-x-[16px] items-center w-[254px] h-[69px] text-center">
+            <img class="footer-top-items-right w-[48px] h-[48px]" src="src/images/address.svg">
+            <div class="footer-top-items-left font-estedad text-[16px] text-[#FFFBFB]">
+              <div class="mb-[12px]">آدرس</div>
+              <div>تهران- خ شادمان</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-middle flex gap-x-[56px] items-center justify-center mt-[16px]">
+          <div class="footer-middle-right w-[407px] h-[168px]">
+            <img class="w-[151.28px] h-[59px] mb-[24px]" src="src/images/Logo-orange.svg" alt="">
+            <div class="w-full font-estedad text-[14px] text-white text-justify">اتورنت با رویکرد اعتماد به مشتری، با در
+              اختیار داشتن بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در سراسر کشور
+              ایران آماده خدمت‌رسانی به مشتریان است.</div>
+          </div>
+          <div
+            class="footer-middle-center w-[134px] h-[156px] grid grid-flow-row gap-y-[24px] font-estedad text-[14px] text-white text-justify font-medium">
+            <a href="" class="hover:text-[#FDB713]">
+              <div>دسترسی آسان</div>
+            </a>
+            <a href="" class="hover:text-[#FDB713]">
+              <div>سوالات متداول</div>
+            </a>
+            <a href="" class="hover:text-[#FDB713]">
+              <div>تماس با ما</div>
+            </a>
+            <a href="" class="hover:text-[#FDB713]">
+              <div>درباره ما</div>
+            </a>
+          </div>
+          <div class="footer-middle-left w-[320px] h-[80px]">
+            <div class="font-estedad text-[16px] text-white text-justify font-bold mb-[12px]">خبرنامه</div>
+            <div
+              class="w-[308px] h-[40px] border-[1px] p-[2px] border-[#AEAEAE] rounded-[8px] flex items-center justify-between">
+              <input class="mr-[3px] w-[225px] h-[30px] text-[12px] font-estedad text-[#C2C2C2]" type="email"
+                placeholder="ایمیل خود را وارد کنید">
+              <div
+                class="w-[66px] h-[32px] rounded-[6px] flex items-center justify-center bg-[#FDB713] hover:bg-[#c39834] text-black">
+                <a href="">ارسال</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="w-[1176px] text-[#868686] mt-[16px] mb-[24px]">
+        <div class="footer-bottom w-[315px] mx-auto text-[#9A9A9A] font-estedad text-[14px]">تمامی حقوق این وبسایت متعلق
+          به اتورنت می‌باشد</div>
+      </div>
+    </div>
+    <!--end footer-->
+
+
+  </div>
+  <!--end wrapper-->
+
+</body>
+
+</html>
