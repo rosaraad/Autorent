@@ -6,6 +6,27 @@
     src: url(../fonts/Estedad.ttf);
 }
 
-@theme{
+@theme {
     --font-estedad: Estedad;
+}
+
+.mySwiper1 .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.mySwiper1 .swiper-slide {
+  flex-shrink: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #F3F3F3;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
 }

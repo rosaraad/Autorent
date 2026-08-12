@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="src/css/output.css">
 </head>
 
-<body class="@apply bg-[#F3F3F3] w-screen h-screen">
+<body>
   <!--wrapper-->
   <div class="wrapper w-full relative">
     <!--header-->
@@ -66,17 +66,17 @@
             <div class="btr flex gap-x-[8px]">
               <a href="">
                 <div
-                  class="header-btr-1 w-[135px] h-[40px] bg-[#194BF0] text-[#D7D7D7] rounded-[20px] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
+                  class="header-btr-1 w-[135px] h-[40px] hover:bg-[#194BF0] hover:text-[#D7D7D7] text-black border-[#D7D7D7] rounded-[20px] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
                   اجاره خودرو با راننده</div>
               </a>
               <a href="">
                 <div
-                  class="header-btr-2 w-[142px] h-[40px] text-black rounded-[20px] border-[#D7D7D7] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
+                  class="header-btr-2 w-[142px] h-[40px] hover:bg-[#194BF0] hover:text-[#D7D7D7] text-black rounded-[20px] border-[#D7D7D7] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
                   اجاره خودرو بی راننده</div>
               </a>
               <a href="">
                 <div
-                  class="header-btr-3 w-[137px] h-[40px] text-black rounded-[20px] border-[#D7D7D7] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
+                  class="header-btr-3 w-[137px] h-[40px] hover:bg-[#194BF0] hover:text-[#D7D7D7] text-black rounded-[20px] border-[#D7D7D7] border-[1px] px-12px font-estedad text-[12px] flex justify-center items-center">
                   اجاره ماشین عروس</div>
               </a>
             </div>
@@ -87,13 +87,15 @@
           </div>
           <div class="header-bc flex justify-between mt-[16px] h-[25px] font-estedad">
             <a href="">
-              <div class="header-bcr flex justify-center items-center gap-x-[4px]"><img class="w-[16px] h-[16px]"
-                  src="src/images/arrow-left.png">محل تحویل خودرو</div>
+              <div class="header-bcr flex justify-center items-center gap-x-[4px]">
+                <img class="w-[16px] h-[16px]" src="src/images/arrow-left.png">محل تحویل خودرو
+              </div>
             </a>
             <div class="header-bcl flex gap-x-[39px] pl-[130px]">
               <a href="">
-                <div class="header-bcl-item flex justify-center items-center gap-x-[4px]"><img class="w-[16px] h-[16px]"
-                    src="src/images/arrow-left.png">تاریخ تحویل</div>
+                <div class="header-bcl-item flex justify-center items-center gap-x-[4px]">
+                  <img class="w-[16px] h-[16px]" src="src/images/arrow-left.png">تاریخ تحویل
+                </div>
               </a>
               <a href="">
                 <div class="header-bcl-item flex justify-center items-center gap-x-[4px]"><img class="w-[16px] h-[16px]"
@@ -110,20 +112,29 @@
             </div>
           </div>
           <div
-            class="header-bb flex justify-between mt-[16px] h-[56px] py-[12px] border-[1px] border-[#F3F3F3] px-[14px] py-[12px] rounded-[16px] relative">
-            <div class="header-bb-r font-estedad">تهران-فرودگاه امام خمینی</div>
+            class="header-bb flex justify-between mt-[16px] h-[56px] py-[12px] border-[1px] border-[#F3F3F3] px-[14px] py-[12px] pl-[130px] rounded-[16px] relative">
+            <div class="dropdown dropdown-start">
+              <div id="location" tabindex="0" role="button" class="header-bb-r font-estedad cursor-pointer">
+                انتخاب کنید
+              </div>
+              <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow-lg">
+                <li><a onclick="selectLocation(this)">تهران - فرودگاه امام خمینی</a></li>
+                <li><a onclick="selectLocation(this)">تهران - فرودگاه مهرآباد</a></li>
+                <li><a onclick="selectLocation(this)">تهران - مرکز شهر</a></li>
+              </ul>
+            </div>
             <div class="header-bbl flex justify-center items-center gap-x-[12px] font-estedad">
-              <div class="header-bbl-item flex justify-center items-center gap-x-[20px]">۱۴۰۳/۰۲/۱۰<img
-                  class="w-[16px] h-[16px]" src="src/images/calendar.svg"></div>
+              <input type="date" class="input border-0" />
+              <img src="src/images/calendar.svg" class="w-[16px] h-[16px]" alt="">
               <span class="text-[#F3F3F3]">|</span>
-              <div class="header-bbl-item flex justify-center items-center gap-x-[50px]">۰۷:۰۰<img
-                  class="w-[16px] h-[16px]" src="src/images/clock.svg"></div>
+              <input type="time" class="input border-0" />
+              <img src="src/images/clock.svg" class="w-[16px] h-[16px]" alt="">
               <span class="text-[#F3F3F3]">|</span>
-              <div class="header-bbl-item flex justify-center items-center gap-x-[20px]">۱۴۰۳/۰۲/۱۰<img
-                  class="w-[16px] h-[16px]" src="src/images/calendar.svg"></div>
+              <input type="date" class="input border-0" />
+              <img src="src/images/calendar.svg" class="w-[16px] h-[16px]" alt="">
               <span class="text-[#F3F3F3]">|</span>
-              <div class="header-bbl-item flex justify-center items-center gap-x-[50px] ml-[104px]">۰۷:۰۰<img
-                  class="w-[16px] h-[16px]" src="src/images/clock.svg"></div>
+              <input type="time" class="input border-0" />
+              <img src="src/images/clock.svg" class="w-[16px] h-[16px]" alt="">
               <div
                 class="w-[56px] h-[56px] bg-[#FDB713] rounded-[16px] flex justify-center items-center absolute left-0">
                 <a href=""><img src="src/images/search.png" alt=""></a>
@@ -135,27 +146,40 @@
     </div>
     <!--header-->
     <!--brands-->
-    <div class="brands w-max-[1440px] h-[80px] mt-[147px]">
-      <div
-        class="brands-center w-[1440px] mx-auto h-full grid grid-flow-col gap-x-[56px] justify-center items-center opacity-[35%]">
-        <div class="brands-item"><a href=""><img class="w-[99.58px] h-[50px]" src="src/images/Land-Rover.png"
-              alt=""></a></div>
-        <div class="brands-item"><a href=""><img class="w-[99.58px] h-[50px]" src="src/images/Jeep.png" alt=""></a>
+    <div class="brands max-w-[1440px] h-[80px] mt-[147px] mx-auto">
+      <div class="brands-center w-full h-full opacity-[35%]">
+        <div class="swiper1 mySwiper1 w-full h-full overflow-hidden">
+          <div class="swiper-wrapper flex items-center">
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[99.58px] h-[50px]" src="src/images/Land-Rover.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[99.58px] h-[50px]" src="src/images/Jeep.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[99.58px] h-[50px]" src="src/images/KIA.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[86.56px] h-[60px]" src="src/images/Toyota.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[69.57px] h-[60px]" src="src/images/Nissan.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[109.92px] h-[60px]" src="src/images/Hyundai.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[73.96px] h-[60px]" src="src/images/Honda.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[80px] h-[80px]" src="src/images/Marcedes.png" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[93.33px] h-[70px]" src="src/images/lexus-logo.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="" class="transition duration-300 hover:brightness-0"><img
+                  class="w-[80px] h-[80px]" src="src/images/BMW.png" alt=""></a>
+            </div>
+          </div>
         </div>
-        <div class="brands-item"><a href=""><img class="w-[99.58px] h-[50px]" src="src/images/KIA.png" alt=""></a></div>
-        <div class="brands-item"><a href=""><img class="w-[86.56px] h-[60px]" src="src/images/Toyota.png" alt=""></a>
-        </div>
-        <div class="brands-item"><a href=""><img class="w-[69.57px] h-[60px]" src="src/images/Nissan.png" alt=""></a>
-        </div>
-        <div class="brands-item"><a href=""><img class="w-[109.92px] h-[60px]" src="src/images/Hyundai.png" alt=""></a>
-        </div>
-        <div class="brands-item"><a href=""><img class="w-[73.96px] h-[60px]" src="src/images/Honda.png" alt=""></a>
-        </div>
-        <div class="brands-item"><a href=""><img class="w-[80px] h-[80px]" src="src/images/Marcedes.png" alt=""></a>
-        </div>
-        <div class="brands-item"><a href=""><img class="w-[93.33px] h-[70px]" src="src/images/lexus-logo.png"
-              alt=""></a></div>
-        <div class="brands-item"><a href=""><img class="w-[80px] h-[80px]" src="src/images/BMW.png" alt=""></a></div>
       </div>
     </div>
     <!--end brands-->
@@ -175,53 +199,62 @@
             ماشین مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار ندارید یا خودروی شما مطمئن نیست،
             می‌توانید از سوییچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.</div>
         </div>
-        <div
-          class="banner-item w-[312px] h-[186px] absolute top-[210px] left-[808px] px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
+        <a href=""
+          class="absolute top-[210px] left-[808px] block w-[312px] h-[186px] transition duration-300 hover:brightness-90">
           <div
-            class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
-            <img class="w-[48px] h-[48px]" src="src/images/box.svg" alt="">
+            class="banner-item w-full h-full px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
+            <div
+              class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
+              <img class="w-[48px] h-[48px]" src="src/images/box.svg" alt="">
+            </div>
+            <h6
+              class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
+              تحویل در
+              محل</h6>
+            <div
+              class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
+              تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</div>
           </div>
-          <h6
-            class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
-            تحویل در
-            محل</h6>
+        </a>
+        <a href=""
+          class="absolute top-[210px] left-[456px] block w-[312px] h-[186px] transition duration-300 hover:brightness-90">
           <div
-            class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
-            تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.</div>
-        </div>
-        <div
-          class="banner-item w-[312px] h-[186px] absolute top-[210px] left-[456px] px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
-          <div
-            class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
-            <img class="w-[48px] h-[48px]" src="src/images/24-support.svg" alt="">
+            class="banner-item w-full h-full px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
+            <div
+              class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
+              <img class="w-[48px] h-[48px]" src="src/images/24-support.svg" alt="">
+            </div>
+            <h6
+              class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
+              پشتیبانی 24 ساعته</h6>
+            <div
+              class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
+              کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</div>
           </div>
-          <h6
-            class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
-            پشتیبانی 24 ساعته</h6>
+        </a>
+        <a href=""
+          class="absolute top-[210px] left-[104px] block w-[312px] h-[186px] transition duration-300 hover:brightness-90">
           <div
-            class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
-            کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.</div>
-        </div>
-        <div
-          class="banner-item w-[312px] h-[186px] absolute top-[210px] left-[104px] px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
-          <div
-            class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
-            <img class="w-[48px] h-[48px]" src="src/images/wallet-minus.svg" alt="">
+            class="banner-item w-full h-full px-[24px] py-[16px] rounded-[16px] border border-[1px] border-[#D7D7D7] bg-white">
+            <div
+              class="banner-item-icon w-[72px] h-[72px] p-[12px] rounded-[12px] border-[1px] border-[#08237D] mb-[8px] mx-auto">
+              <img class="w-[48px] h-[48px]" src="src/images/wallet-minus.svg" alt="">
+            </div>
+            <h6
+              class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
+              قیمت مناسب</h6>
+            <div
+              class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
+              هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</div>
           </div>
-          <h6
-            class="banner-item-title w-fit h-[22px] font-estedad text-[16px] text-[#414141] mb-[8px] mx-auto font-semibold">
-            قیمت مناسب</h6>
-          <div
-            class="banner-item-text  w-fit h-[44px] font-estedad text-[12px] text-[#757575] text-center mb-[8px] mx-auto">
-            هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</div>
-        </div>
+        </a>
       </div>
     </div>
     <!--end banner-->
     <!--categories-->
     <div class="categories w-max-[1440px] h-[144px] mt-[152px]">
       <div class="categories-center w-[1224px] h-full mx-auto grid grid-flow-col items-center justify-between">
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div
             class="categories-item w-[234.4px] h-[144px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white relative overflow-hidden">
             <h4 class="text-[24px] font-estedad text-center mt-[8px] font-semibold">کوپه</h4>
@@ -229,7 +262,7 @@
             <div class="w-[208px] h-[19px] rounded-[8px] bg-[#FDB713] absolute left-[11.5px] top-[136px]"></div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div
             class="categories-item w-[234.4px] h-[144px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white relative overflow-hidden"
             overflow-hidden>
@@ -238,7 +271,7 @@
             <div class="w-[208px] h-[19px] rounded-[8px] bg-[#FDB713] absolute left-[11.5px] top-[136px]"></div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div
             class="categories-item w-[234.4px] h-[144px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white relative overflow-hidden">
             <h4 class="text-[24px] font-estedad text-center mt-[8px] font-semibold">کروک</h4>
@@ -246,7 +279,7 @@
             <div class="w-[208px] h-[19px] rounded-[8px] bg-[#FDB713] absolute left-[11.5px] top-[136px]"></div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div
             class="categories-item w-[234.4px] h-[144px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white relative overflow-hidden">
             <h4 class="text-[24px] font-estedad text-center mt-[8px] font-semibold">شاسی بلند</h4>
@@ -254,7 +287,7 @@
             <div class="w-[208px] h-[19px] rounded-[8px] bg-[#FDB713] absolute left-[11.5px] top-[136px]"></div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div
             class="categories-item w-[234.4px] h-[144px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white relative overflow-hidden">
             <h4 class="text-[24px] font-estedad text-center mt-[8px] font-semibold">اسپرت</h4>
@@ -277,17 +310,17 @@
           <div class="filter-right flex gap-x-[8px] w-[400px] h-[48px] absolute right-[412px]">
             <a href="">
               <div
-                class="header-btr-1 w-[128px] h-[48px] bg-[#194BF0] text-[#D7D7D7] rounded-[8px] border-[1px] font-estedad text-[14px] flex justify-center items-center">
+                class="header-btr-1 w-[128px] h-[48px] text-[#194BF0] hover:bg-[#194BF0] hover:text-[#D7D7D7] rounded-[8px] border-[#194BF0] border-[1px] font-estedad text-[14px] flex justify-center items-center">
                 پرطرفدار</div>
             </a>
             <a href="">
               <div
-                class="header-btr-2 w-[128px] h-[48px] text-[#194BF0] rounded-[8px] border-[#194BF0] border-[1px] font-estedad text-[14px] flex justify-center items-center">
+                class="header-btr-2 w-[128px] h-[48px] text-[#194BF0] hover:bg-[#194BF0] hover:text-[#D7D7D7] rounded-[8px] border-[#194BF0] border-[1px] font-estedad text-[14px] flex justify-center items-center">
                 لوکس</div>
             </a>
             <a href="">
               <div
-                class="header-btr-3 w-[128px] h-[48px] text-[#194BF0] rounded-[8px] border-[#194BF0] border-[1px] font-estedad text-[14px] flex justify-center items-center">
+                class="header-btr-3 w-[128px] h-[48px] text-[#194BF0] hover:bg-[#194BF0] hover:text-[#D7D7D7] rounded-[8px] border-[#194BF0] border-[1px] font-estedad text-[14px] flex justify-center items-center">
                 اقتصادی</div>
             </a>
           </div>
@@ -295,7 +328,8 @@
               همه</a><img src="src/images/arrow-left.svg" alt=""></div>
         </div>
         <div class="mojoodi-items grid grid-cols-3 grid-rows-2 gap-[20px] mx-auto mt-[50px] w-[1224px] h-[1044px]">
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-1.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -326,7 +360,8 @@
                 درخواست رزرو</div>
             </a>
           </div>
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-2.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -357,7 +392,8 @@
                 درخواست رزرو</div>
             </a>
           </div>
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-3.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -388,7 +424,8 @@
                 درخواست رزرو</div>
             </a>
           </div>
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-4.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -419,7 +456,8 @@
                 درخواست رزرو</div>
             </a>
           </div>
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-5.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -450,7 +488,8 @@
                 درخواست رزرو</div>
             </a>
           </div>
-          <div class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
+          <div
+            class="mojoodi-item w-[392px] h-[510px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px] transition duration-300 hover:brightness-90">
             <img class="w-[350px] h-[225px] block mx-auto border-[1px] border-[#F3F3F3] rounded-[12px]"
               src="src/images/item-6.jpg" alt="">
             <div class="mojoodi-item-model mt-[8px]">
@@ -566,7 +605,7 @@
           <div class="w-[808px] h-full question-container-right">
             <div class="questions-items w-full h-fit space-y-[20px]">
               <div
-                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right transition duration-300 hover:brightness-90"
                 dir="ltr">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-[16px] text-[#353535]">در صورت بروز نقص فنی برای خودرو چه اتفاقی می
@@ -576,7 +615,7 @@
                   از بررسی، اقدامات لازم برای رفع مشکل یا جایگزینی خودرو انجام خواهد شد.</div>
               </div>
               <div
-                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right transition duration-300 hover:brightness-90"
                 dir="ltr">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-[16px] text-[#353535]">هزینه بنزین و کارواش در خودروهای اجاره ای به عهده
@@ -587,7 +626,7 @@
                   دارای کسر سوخت باشد هزینه آن بر عهده مشتری می باشد.</div>
               </div>
               <div
-                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right transition duration-300 hover:brightness-90"
                 dir="ltr">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-[16px] text-[#353535]">آیا ماشین های اتورنت دارای بیمه هستند؟</div>
@@ -597,7 +636,7 @@
                 </div>
               </div>
               <div
-                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right"
+                class="collapse collapse-plus w-full h-fit font-estedad bg-base-100 border border-base-300 text-right transition duration-300 hover:brightness-90"
                 dir="ltr">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title text-[16px] text-[#353535]">محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
@@ -640,7 +679,7 @@
       <div class="comments-banner-small w-[1224px] h-[96px] flex gap-x-[24px] items-center mt-[24px]">
         <a href="">
           <div
-            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-[#FDB713]">
+            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white hover:bg-[#FDB713]">
             <img class="comment-small-pic w-[64px] h-[64px] rounded-[70.36px]" src="src/images/user-1.jpg">
             <div class="comment-small-text font-estedad">
               <div class="name mb-[8px] text-[16px] text-[#212121] font-medium">اولدوز بهاور</div>
@@ -650,7 +689,7 @@
         </a>
         <a href="">
           <div
-            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white">
+            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white hover:bg-[#FDB713]">
             <img class="comment-small-pic w-[64px] h-[64px] rounded-[70.36px]" src="src/images/user-2.jpg">
             <div class="comment-small-text font-estedad">
               <div class="name mb-[8px] text-[16px] text-[#212121] font-medium">محمدجواد امینی</div>
@@ -660,7 +699,7 @@
         </a>
         <a href="">
           <div
-            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white">
+            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white hover:bg-[#FDB713]">
             <img class="comment-small-pic w-[64px] h-[64px] rounded-[70.36px]" src="src/images/user-3.jpg">
             <div class="comment-small-text font-estedad">
               <div class="name mb-[8px] text-[16px] text-[#212121] font-medium">فرزانه حیدری</div>
@@ -670,7 +709,7 @@
         </a>
         <a href="">
           <div
-            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white">
+            class="comments-small w-[288px] h-[96px] flex gap-x-[16px] items-center justify-center rounded-[16px] border-[1px] border-[#D7D7D7] p-[16px] bg-white hover:bg-[#FDB713]">
             <img class="comment-small-pic w-[64px] h-[64px] rounded-[70.36px]" src="src/images/user-4.jpg">
             <div class="comment-small-text font-estedad">
               <div class="name mb-[8px] text-[16px] text-[#212121] font-medium">فاطمه ابراهیمی‌فر</div>
@@ -691,7 +730,7 @@
             خودرو</span></div>
       </div>
       <div class="majale-content w-[1221px] h-[370px] flex gap-x-[24px]">
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div class="majale-item w-[391px] h-[370px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
             <img class="w-[359px] h-[195px] rounded-[12px]" src="src/images/majale-1.png" alt="">
             <div class="majale-item-title font-estedad text-[16px] text-[#414141] font-medium mt-[16px]">روش های مختلف
@@ -708,7 +747,7 @@
             </div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div class="majale-item w-[391px] h-[370px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
             <img class="w-[359px] h-[195px] rounded-[12px]" src="src/images/majale-2.png" alt="">
             <div class="majale-item-title font-estedad text-[16px] text-[#414141] font-medium mt-[16px]">روش های مختلف
@@ -725,7 +764,7 @@
             </div>
           </div>
         </a>
-        <a href="">
+        <a href="" class="transition duration-300 hover:brightness-90">
           <div class="majale-item w-[391px] h-[370px] rounded-[16px] border-[1px] border-[#D7D7D7] bg-white p-[16px]">
             <img class="w-[359px] h-[195px] rounded-[12px]" src="src/images/majale-3.png" alt="">
             <div class="majale-item-title font-estedad text-[16px] text-[#414141] font-medium mt-[16px]">روش های مختلف
@@ -783,16 +822,16 @@
         </div>
         <div
           class="footer-middle-center w-[134px] h-[156px] grid grid-flow-row gap-y-[24px] font-estedad text-[14px] text-white text-justify font-medium">
-          <a href="">
+          <a href="" class="hover:text-[#FDB713]">
             <div>دسترسی آسان</div>
           </a>
-          <a href="">
+          <a href="" class="hover:text-[#FDB713]">
             <div>سوالات متداول</div>
           </a>
-          <a href="">
+          <a href="" class="hover:text-[#FDB713]">
             <div>تماس با ما</div>
           </a>
-          <a href="">
+          <a href="" class="hover:text-[#FDB713]">
             <div>درباره ما</div>
           </a>
         </div>
@@ -802,8 +841,10 @@
             class="w-[308px] h-[40px] border-[1px] p-[2px] border-[#AEAEAE] rounded-[8px] flex items-center justify-between">
             <input class="mr-[3px] w-[225px] h-[30px] text-[12px] font-estedad text-[#C2C2C2]" type="email"
               placeholder="ایمیل خود را وارد کنید">
-            <div class="w-[66px] h-[32px] rounded-[6px] flex items-center justify-center bg-[#FDB713] text-black"><a
-                href="">ارسال</a></div>
+            <div
+              class="w-[66px] h-[32px] rounded-[6px] flex items-center justify-center bg-[#FDB713] hover:bg-[#c39834] text-black">
+              <a href="">ارسال</a>
+            </div>
           </div>
         </div>
       </div>
@@ -815,6 +856,28 @@
   <!--end footer-->
   </div>
   <!--end wrapper-->
+
+  <!-- Swiper JS -->
+  <script src="src/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/cally"></script>
+
+  <script>
+    const swiper1 = new Swiper('.mySwiper1', {
+      slidesPerView: 'auto',
+      spaceBetween: 80,
+      grabCursor: true,
+
+      loop: true,
+
+      speed: 7000,
+
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 </body>
 
 </html>
