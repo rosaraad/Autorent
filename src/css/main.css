@@ -33,7 +33,7 @@ body {
 .content {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: calc(50% - 260px);
     transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
@@ -59,6 +59,7 @@ body {
 .title {
     margin: 0 0 30px 0;
     color: #171717;
+    font-family: Estedad, sans-serif;
     font-size: clamp(40px, 5vw, 70px);
     font-weight: 800;
     line-height: 1.4;
@@ -72,6 +73,7 @@ body {
     background: #171717;
     color: white;
     text-decoration: none;
+    font-family: Estedad, sans-serif;
     font-size: 18px;
     font-weight: bold;
     transition: 0.3s ease;
@@ -85,16 +87,35 @@ body {
 
 .footer {
     position: absolute;
-    bottom: 55px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 260px);
+    top: calc(50% + 170px);
+    transform: translateX(-50%) translateY(20px);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     color: #777;
+    font-family: Estedad, sans-serif;
     font-size: 14px;
     z-index: 4;
     white-space: nowrap;
+    opacity: 0;
+}
+
+.footer.show {
+    animation: showFooter 1s ease forwards;
+}
+
+@keyframes showFooter {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 .author {
@@ -102,11 +123,6 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
-}
-
-.author strong {
-    color: #171717;
-    font-weight: 700;
 }
 
 .socials {
@@ -140,7 +156,7 @@ body {
 .car {
     position: absolute;
     width: 400px;
-    left: -350px;
+    left: -400px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 5;
@@ -149,40 +165,37 @@ body {
 
 @keyframes carDrive {
     from {
-        left: -350px;
+        left: -400px;
     }
 
     to {
-        left: 50%;
+        left: calc(50% + 20px);
     }
 }
 
-.road {
-    position: absolute;
-    left: 0;
-    bottom: 17%;
-    width: 100%;
-    height: 3px;
-    background: #222;
-    opacity: 0.12;
-}
-
 @media (max-width: 768px) {
+
+    .content {
+        left: calc(50% - 120px);
+        width: 45vw;
+        padding: 0 10px;
+    }
+
+    .title {
+        white-space: normal;
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .enter-btn {
+        padding: 13px 30px;
+        font-size: 15px;
+    }
 
     .car {
         width: 220px;
         left: -250px;
         animation: carDriveMobile 1.5s linear forwards;
-    }
-
-    .content {
-        left: 45%;
-        width: 90%;
-    }
-
-    .title {
-        white-space: normal;
-        font-size: 35px;
     }
 
     @keyframes carDriveMobile {
@@ -191,29 +204,24 @@ body {
         }
 
         to {
-            left: 60%;
+            left: calc(50% + 20px);
         }
     }
 
-    .bottom-line {
-        left: 5%;
-        right: 5%;
-        bottom: 85px;
-    }
-
     .footer {
-        bottom: 55px;
-        gap: 10px;
-        font-size: 13px;
+        left: calc(50% - 120px);
+        top: calc(50% + 125px);
+        gap: 8px;
+        font-size: 12px;
     }
 
     .socials a {
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
     }
 
     .socials svg {
-        width: 17px;
-        height: 17px;
+        width: 16px;
+        height: 16px;
     }
 }

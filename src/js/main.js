@@ -1,7 +1,8 @@
+const car = document.querySelector('.car');
+const content = document.querySelector('.content');
+const footer = document.querySelector('.footer');
 
-const car = document.querySelector(".car");
-const content = document.querySelector(".content");
-
-car.addEventListener("animationend", () => {
-    content.classList.add("show");
+car.addEventListener('animationend', () => {
+    content.classList.add('show');
+    footer.classList.add('show');
 });
