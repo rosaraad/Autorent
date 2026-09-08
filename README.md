@@ -4,19 +4,18 @@ A modern car rental website built using HTML, Tailwind CSS, DaisyUI, and Swiper.
 
 This project focuses on translating a complete desktop Figma design into a clean, modern, and user-friendly car rental website.
 
-**Project Status:** In Progress
-
 ## 🔗 Live Demo
 
 [Autorent Website](https://rosaraad.github.io/Autorent/)
 
 ## 📸 Preview
 
+![Desktop Preview](./assets/desktop-preview.png)
 
 
 ## 🎥 Demo
 
-
+![Website Demo](./assets/demo.gif)
 
 ## ✨ Features
 
